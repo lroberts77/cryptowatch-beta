@@ -1,12 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { Switch, Route, Link } from 'react-router-dom';
+import { Layout, Typography, Space } from 'antd';
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello world</h1>
+    <div className="app">
+      <div className="navbar">
+
+      </div>
+      <div className="main">
+
+      </div>
+      <div className="footer">
+        
+      </div>
     </div>
   )
-}
+};
 
-export default App
+export default App;
 
