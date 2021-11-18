@@ -2,17 +2,18 @@ import React from 'react'
 import { Button, Menu, Typography, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from "@ant-design/icons";
+import { icon } from "../../images/incognito.png";
 
 const navbar = () => {
     return (
         <div className="nav-container">
             <div className="logo-container">
-                <Avatar />
+                <Avatar src={icon} size="large" />
                 <Typography.Title level={2} className="logo">
                     <Link to="/">Cryptowatch-BETA</Link>
                 </Typography.Title>
                 <Button className="menu-control-container">
-                    
+
                 </Button>
             </div>
         </div>
