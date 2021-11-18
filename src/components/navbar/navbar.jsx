@@ -5,8 +5,16 @@ import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOut
 
 const navbar = () => {
     return (
-        <div>
-            
+        <div className="nav-container">
+            <div className="logo-container">
+                <Avatar />
+                <Typography.Title level={2} className="logo">
+                    <Link to="/">Cryptowatch-BETA</Link>
+                </Typography.Title>
+                <Button className="menu-control-container">
+                    
+                </Button>
+            </div>
         </div>
     )
 }
