@@ -9,6 +9,7 @@ const { option } = Select;
 const News = ({ simplified }) => {
 
     const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory: 'Cryptocurrency', count: simplified ? 10 : 100 })
+    console.log(cryptoNews);
 
     return (
         <div>
