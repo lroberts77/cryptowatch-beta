@@ -5,6 +5,7 @@ import { useGetCryptoNewsQuery } from '../../services/cryptoNewsApi';
 
 const { Text, Title } = Typography;
 const { option } = Select;
+const demoImage = 'http://coinrevolution.com/wp-content/uploads/202/06/cryptonews.jpg';
 
 const News = ({ simplified }) => {
 
@@ -21,7 +22,7 @@ const News = ({ simplified }) => {
                         <a href={news.url} target='_blank' rel='noreferrer'>
                             <div className='news-image-container'>
                                 <Title className='news.title' level={4}>{news.name}</Title>
-                            </div>
+                                <img src={news?.image?.thumbnail?.contentUrl  || demoImage } alt='news' />                            </div>
                         </a>
                     </Card>
                 </Col>
