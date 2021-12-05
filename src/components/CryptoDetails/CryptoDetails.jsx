@@ -37,9 +37,13 @@ const CryptoDetails = () => {
     console.log(data);
 
     return (
-        <div>
-            CryptoDetails{coinId}
-        </div>
+        <Col className='coin-detail-cointainer'>
+            <Col className='coin-heading-container'>
+                <Title level={2} className='coin-name'>
+                    {cryptoDetails.name} ({cryptoDetails.slug}) Price
+                </Title>
+            </Col>
+        </Col>
     )
 }
 
