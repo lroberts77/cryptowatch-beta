@@ -20,11 +20,11 @@ const CryptoDetails = () => {
     const time = ['3h', '24h', '7d', '30d', '3m', '1y', '3y', '5y'];
 
     const stats = [
-        { title: 'Price to USD', value: `$ ${cryptoDetails?.price }`, icon: <DollarCircleOutlined /> },
+        { title: 'Price to USD', value: `$ ${cryptoDetails?.price && millify(cryptoDetails.price)}`, icon: <DollarCircleOutlined /> },
         { title: 'Rank', value: cryptoDetails?.rank, icon: <NumberOutlined /> },
-        { title: '24h Volume', value: `$ ${cryptoDetails?.volume }`, icon: <ThunderboltOutlined /> },
-        { title: 'Market Cap', value: `$ ${cryptoDetails?.marketCap }`, icon: <DollarCircleOutlined /> },
-        { title: 'All-time-high(daily avg.)', value: `$ ${cryptoDetails?.allTimeHigh?.price}`, icon: <TrophyOutlined /> },
+        { title: '24h Volume', value: `$ ${cryptoDetails?.volume && millify(cryptoDetails.volume)}`, icon: <ThunderboltOutlined /> },
+        { title: 'Market Cap', value: `$ ${cryptoDetails?.marketCap && millify(cryptoDetails.marketCap)}`, icon: <DollarCircleOutlined /> },
+        { title: 'All-time-high(daily avg.)', value: `$ ${millify(cryptoDetails.allTimeHigh.price)}`, icon: <TrophyOutlined /> },
       ];
     
       const genericStats = [
@@ -67,6 +67,15 @@ const CryptoDetails = () => {
                             An overview showing the stats of {cryptoDetails?.name}
                         </p>
                     </Col>
+                    {stats.map(({ icon, title, value }) => (
+                        <Col className='coin-stats'>
+                            <Col className='coin-stats-name'>
+                                <Text>{icon}</Text>
+                                <Text>{title}</Text>
+                            </Col>
+                            <Text className='stats'>{value}</Text>
+                        </Col>
+                    ))}
                 </Col>
             </Col>
         </Col>
