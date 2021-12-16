@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Exchanges = () => {
     return (
@@ -8,4 +8,4 @@ const Exchanges = () => {
     )
 }
 
-export default Exchanges
+export default Exchanges;

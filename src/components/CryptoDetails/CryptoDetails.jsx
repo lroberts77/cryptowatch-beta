@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import HTMLReactParser from 'html-react-parser';
 import { useParams } from 'react-router';
 import millify from 'millify';
 import { Col, Row, Typography, Select } from 'antd';
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
-import { useGetCryptoDetailsQuery } from '../../services/cryptoApi';
+import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from '../../services/cryptoApi';
 import LineChart from '../LineChart/LineChart';
 
 const { Title, Text } = Typography;
@@ -62,7 +62,7 @@ const CryptoDetails = () => {
             </Select>
 
             <LineChart currentPrice={millify(cryptoDetails.price)} coinName={cryptoDetails.name} />
-            
+
             <Col className='stats-container'>
                 <Col className='coin-value-statistics'>
                     <Col className='coin-value-statistics-heading'>
@@ -130,4 +130,4 @@ const CryptoDetails = () => {
     )
 }
 
-export default CryptoDetails
+export default CryptoDetails;
