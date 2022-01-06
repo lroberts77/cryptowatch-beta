@@ -7,7 +7,9 @@ const { Title } = Typography;
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
 
     const coinPrice = [];
+    console.log(coinPrice);
     const coinTimestamp = [];
+    console.log(coinTimestamp);
 
     for(let i=0; i<coinHistory?.data?.history?.length; i+=1) {
         coinPrice.push(coinHistory.data.history[i].price)
@@ -23,7 +25,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
                     <Title level={5} className='current-price'>Current {coinName} Price: $ {currentPrice}</Title>
                 </Col>
             </Row>
-            <Line data={data} options={options} />
+            {/* <Line /> */}
         </>
     )
 }
