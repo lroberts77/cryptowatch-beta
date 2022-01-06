@@ -6,9 +6,11 @@ const { Title } = Typography;
 
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     return (
-        <div>
-            LINE
-        </div>
+        <>
+            <Row className='chart-header'>
+                <Title level={2} className='chart-title'>{coinName} Price Chart</Title>
+            </Row>
+        </>
     )
 }
 
