@@ -1,5 +1,5 @@
 import React from 'react';
-import { spin } from 'antd';
+import { Spin } from 'antd';
 
 const Loader = () => {
     return (

@@ -5,3 +5,4 @@ export { default as Homepage } from "./Homepage/Homepage";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as News } from "./News/News";
 export { default as LineChart } from "./LineChart/LineChart";
+// export { default as Loader } from "./Loader/Loader";
