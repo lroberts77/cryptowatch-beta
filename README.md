@@ -35,3 +35,8 @@ $ npm install
 $ npm start
 ```
 If a tab doesn't open with the cryptowatch-beta app running, open a new tab and type in localhost:3000 in the url bar and press enter. After the page has loaded scroll up and down to view cryptocurrency stats, top ten cryptocurrencies and latest cryptocurrency news. If you want to search for a cryptocurrency, click on the cryptocurrencies tab and type in the search box and it will filter the currencies to the value of the search box. Clicking on a cryptocurrency card will show you a price history chart for the cryptocurrency and also more detailed information about the currency. Clicking on the news tab will shows cards with all the latest cryptocurrency news and clicking on these wil take you to website with the full story.
+
+## <a name="Improvements">Improvements</a>
+* Experiment more with styling
+* Complete the exchanges section
+* 
