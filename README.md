@@ -7,3 +7,11 @@ CRYPTOWATCH
 
 <img src="https://api.netlify.com/api/v1/badges/f3373dbc-9303-414b-ab00-bfc454dac1a6/deploy-status" alt="netlify success" />
 </div>
+
+### Technologies: React, Redux, Node.js, JavaScript, Rapid Api, Chart JS, HTML, CSS, Ant-designs
+
+## Index
+* [Project Direction](#Project)
+* [Installation](#Install)
+* [Usage](#Usage)
+* [Improvemets](#Improvements)
