@@ -15,3 +15,6 @@ CRYPTOWATCH
 * [Installation](#Install)
 * [Usage](#Usage)
 * [Improvemets](#Improvements)
+
+## <a name="Project">Project Direction</a>
+I created this app to merge my two interests of coding and crypto trading. This app allows you to quickly check the movements of your cryptocurrencies, price history charts and cryptocurrency news. I learned alot during the course of making this app including using ant-designs for repsonsive styling, API usage with redux, passing props from one component to another and Links with react-router.
